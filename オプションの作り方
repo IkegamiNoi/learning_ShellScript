@@ -1,0 +1,11 @@
+引数に「--h」を書くとhelpを表示するコード
+
+if ["$1" == "${1#-}"]; then
+    echo "normal"
+else 
+    if ["h" == "${1#-}"]; then
+        echo "help表示"
+    elif ["a" == "${1#-}"]; then
+        echo "aのオプション"
+    fi
+fi

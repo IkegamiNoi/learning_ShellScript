@@ -1,0 +1,10 @@
+$ echo ${hoge}
+hoge-value
+
+# パターンに一致する部分が除去される
+$ echo ${hoge#hoge-}
+value
+
+# * で任意のパターンにマッチする
+$ echo ${hoge#*-}
+value
